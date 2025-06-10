@@ -1,1 +1,10 @@
 assistant_id: 20250609-174843-icy-locus
+language: ko
+
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: CountVectorsFeaturizer
+  - name: DIETClassifier
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
+  - name: FallbackClassifier

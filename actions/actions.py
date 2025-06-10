@@ -18,10 +18,10 @@ class ActionGetSummary(Action):
             # MSSQL 연결 (본인 환경에 맞게 수정)
             conn = pyodbc.connect(
                 "DRIVER={ODBC Driver 17 for SQL Server};"
-                "SERVER=192.168.0.100;"
-                "DATABASE=EMRDB;"
-                "UID=dbuser;"
-                "PWD=dbpass"
+                "SERVER=20.20.20.80\sql2020,14333;"
+                "DATABASE=HIB70_SRC;"
+                "UID=sa;"
+                "PWD=hib"
             )
             cursor = conn.cursor()
             cursor.execute(query)
