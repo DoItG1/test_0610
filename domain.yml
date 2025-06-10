@@ -1,0 +1,10 @@
+version: "3.1"
+intents:
+  - get_summary
+
+actions:
+  - action_get_summary
+
+responses:
+  utter_ask_summary:
+    - text: "통계를 불러오는 중입니다 📊 잠시만 기다려 주세요."

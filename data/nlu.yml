@@ -1,0 +1,7 @@
+version: "3.1"
+nlu:
+- intent: get_summary
+  examples: |
+    - 이번 달 진료 통계 요약해줘
+    - 어제 외래 진료 상황 알려줘
+    - 이번 달 입원 통계 보고 싶어
